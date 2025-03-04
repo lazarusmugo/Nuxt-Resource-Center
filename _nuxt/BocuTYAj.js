@@ -1,1 +1,0 @@
-import{l as r,W as l,k as _,w as e,h as n,X as d,Q as t}from"./CuHbwIuK.js";const f={};function u(o,i){const a=t("UAside"),s=t("UPage"),c=t("UContainer");return _(),l(c,null,{default:e(()=>[n(s,null,{left:e(()=>[n(a)]),default:e(()=>[d(o.$slots,"default")]),_:3})]),_:3})}const m=r(f,[["render",u]]);export{m as default};

@@ -1,0 +1,1 @@
+import{l as r,f as o,k as t,U as n}from"./DzvLftP5.js";const s={};function c(e,a){return t(),o("strong",null,[n(e.$slots,"default")])}const f=r(s,[["render",c]]);export{f as default};
