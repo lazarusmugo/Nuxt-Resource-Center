@@ -3,7 +3,7 @@
     <h1 class="text-3xl font-bold">Welcome to the Resource Center</h1>
     <p class="text-gray-600">Find everything you need in one place.</p>
 
-    <div class="mt-6 flex flex-wrap justify-center gap-4">
+    <div v-if="featuredDocs.length" class="mt-6 flex flex-wrap justify-center gap-4">
       <NuxtLink
         v-for="doc in featuredDocs"
         :key="doc._path"
@@ -13,12 +13,15 @@
         <h2 class="text-lg font-semibold">{{ doc.title }}</h2>
       </NuxtLink>
     </div>
+    <p v-else class="text-gray-500">No documentation available.</p>
   </div>
 </template>
 
 <script setup>
-const { data: docs } = await useAsyncData("docs", () => queryContent("docs").find());
+const { data: docs } = await useAsyncData("docs", async () => {
+  const content = await queryContent("docs").find();
+  return content || []; 
+});
 
-// Show only the first 3 documents as "featured"
-const featuredDocs = computed(() => docs.value.slice(0, 3));
+const featuredDocs = computed(() => (docs.value ? docs.value.slice(0, 3) : []));
 </script>
