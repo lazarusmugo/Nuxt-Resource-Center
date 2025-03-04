@@ -1,0 +1,1 @@
+import{l as e,f as t,h as c,B as n,k as s}from"./BW1FV82y.js";const r={},a={class:"prose mx-auto"};function _(d,f){const o=n("ContentDoc");return s(),t("div",a,[c(o)])}const m=e(r,[["render",_]]);export{m as default};
