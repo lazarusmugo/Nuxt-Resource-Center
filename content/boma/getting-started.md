@@ -15,8 +15,16 @@ date: 2023-10-01
 
 # I really like boma
 
+::prose-table
+## hjhjhjhv
+
+#jknjkjk
+::
+
 ```bash
 pnpm i
 ```
 
-![https://tajji.io/logo.png](https://tajji.io/logo.png){height="200" width="200"}
+![https://tajji.io/logo.png](https://tajji.io/logo.png){height="200" width="100"}
+
+:video
